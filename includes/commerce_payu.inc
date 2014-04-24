@@ -5,18 +5,7 @@
  */
 
 function commerce_payu_close_transaction() {
-  /*
-   stała opis
-   %transId% identyfikator nowej transakcji utworzonej w aplikacji PayU
-   %posId% wartosci pos id
-   %payType% wartosci pay type
-   %sessionId% wartosci session id
-   %amountPS% wartosci amount - jako separator kropka
-   %amountCS% wartosci amount - jako separator przecinek
-   %orderId% wartosci order id
-   %error% numer błedu zgodnie z tabelka 2.1 (s. 3), jest wykorzystywany tylko przy
 
-   */
   $error_id = isset($_REQUEST['error']) ? $_REQUEST['error'] : 0;
   $order_id = isset($_REQUEST['order_id']) ? $_REQUEST['order_id'] : 0;
   $session_id = isset($_REQUEST['session_id']) ? $_REQUEST['session_id'] : 0;
